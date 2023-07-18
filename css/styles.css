@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"); 
+
+:root{
+    --iriscolor: #4D5AE5;
+    --navyblue: #2E2F42;
+    --navcolor: black;
+    --oceancolor: #404BBF;
+    --whitecolor: white;
+    --slatecolor: #434455;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD;
+}
+
+/* CSS reset */
+p,
+h1,
+h2,
+h3{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+/* End of CSS reset */
+
+/* General container */
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    }
+
+body {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+  /* CSS for Header */
+.header{
+    padding: 24px 0;
+    border-bottom: 1px solid var(--cornflower)
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.webstudio-logo{
+    font-family: 'Raleway';
+    text-decoration: none; 
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.web-logo{
+    color: var(--iriscolor);
+}
+
+.studio-logo{
+    color: var(--navyblue);
+}
+
+/* Navigation Section */
+
+.navigation{
+    display: flex;
+    margin-left: 76px;
+    gap: 40px;
+
+}
+
+.navigation .pages{
+    color: var(--navcolor);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lists{
+    list-style-type: none;
+}
+
+.navigation .pages:hover,
+.navigation .pages:focus,
+.navigation .pages.current-option,
+.contact-information .information:hover,
+.contact-information .information:focus {
+    color: var(--oceancolor);
+}
+/* Contact information */
+
+.contact-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-information .information{
+    color: var(--navcolor);
+    text-decoration: none;
+}
+
+/* Hero Section*/
+.hero{
+    padding: 188px 0;
+    background-color: var(--navyblue);
+}
+
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title{
+    margin-bottom: 48px;
+    color: var(--whitecolor);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+}
+
+.btn{
+    display: block;
+
+    cursor: pointer;
+    border-color: transparent;
+    letter-spacing: 0.64px;
+    font-family: inherit; 
+}
+
+.btn.primary{
+    padding: 16px 32px;
+
+    background-color: var(--iriscolor);
+    color: var(--whitecolor);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+}
+
+.btn.primary:hover,
+.btn.primary:focus{
+    background-color: var(--oceancolor);
+}
+
+/* Criteria list */
+
+.criterias{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.criteria{
+    display: flex;
+    width: 264px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.title-list{
+
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.description-list{
+    color: var(--slatecolor);
+}
+
+/* What are we doing section */
+.section-no-top-padding{
+    padding-top: 0;
+}
+
+.section-title{
+    margin-bottom: 72px;
+
+    color: var(--navyblue);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.services{
+    display: flex;
+    gap: 24px;
+
+}
+
+.service{
+    display: inline-flex;
+
+    border: 1px solid var(--cornflower);
+}
+
+/* Our Team */
+.team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teams{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--whitecolor);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.section-grey{
+    background-color: var(--cloud);
+}
+
+.teamname{
+    margin-top: 32px;
+    margin-bottom: 8px;
+    color: var(--navyblue);
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.position{
+    color: var(--slatecolor);
+    text-align: center;
+}
+
+/* CSS for footer */
+
+.footer-part{
+    padding: 100px 0;
+    background-color: var(--navyblue);
+}
+
+.studio-logo2{
+    color: var(--whitecolor)
+}
+
+.footerparagraph{
+    margin-top: 16px;
+    color: var(--whitecolor);
+}
+
+/* CSS for Portfolio Section */
+
+/* Filters */
+
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filters{
+    display: inline-flex;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.filter{
+    display: flex;
+    align-items: flex-start;
+    padding: 12px 24px;
+
+    color: var(--iriscolor);
+    cursor: pointer;
+    border-color: transparent;
+    letter-spacing: 0.64px;
+    font-family: inherit;
+    background-color: var(--cloud);
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid var(--cornflower);
+    font-weight: 500;
+}
+
+.filter-active, .filter:hover, .filter:focus{
+    color: var(--whitecolor);
+    border-radius: 4px;
+    background-color: var(--oceancolor);
+    border-color: var(--oceancolor);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);;
+}
+
+.filter .filter-active{
+    color: var(--iriscolor);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+.filter.filter-active:hover,
+.filter.filter-active:focus{
+    color: var(--cloud);
+    background-color: var(--oceancolor);
+}
+/* End of filters */
+
+/* Projects */
+
+.project-wrap{
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.project-title{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+    color: var(--navyblue);
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+
+    color: var(--slatecolor);
+}
+
