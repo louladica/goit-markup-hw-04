@@ -9,6 +9,7 @@
     --slatecolor: #434455;
     --cornflower: #E7E9FC;
     --cloud: #F4F4FD;
+    --lightgray: 
 }
 
 /* CSS reset */
@@ -125,13 +126,19 @@ body {
 /* Hero Section*/
 .hero{
     padding: 188px 0;
-    background-color: var(--navyblue);
+    background-color: var(--navyblue, rgba(46, 47, 66, 0.4));
+    background-image: url(../images/dark-bg.png), url(../images/hero-image.jpg),
+    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .hero-title{
@@ -266,7 +273,11 @@ body {
 .position{
     color: var(--slatecolor);
     text-align: center;
+    
 }
+
+/* Customers CSS */
+
 
 /* CSS for footer */
 
