@@ -9,7 +9,8 @@
     --slatecolor: #434455;
     --cornflower: #E7E9FC;
     --cloud: #F4F4FD;
-    --lightgray: 
+    --lightslate: #8E8F99;
+    --greencolor: #31D0AA
 }
 
 /* CSS reset */
@@ -190,6 +191,27 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+
+}
+
+.criteria-svg{
+    width: 264px;
+    height: 112px;
+    background-color: var(--cloud);
+    border-radius: 4px;
+}
+
+.criteria-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 100px;
+    fill: var(--navyblue);
+}
+
+.criteria-svg:hover,
+.criteria-svg:focus{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .title-list{
@@ -276,8 +298,69 @@ body {
     
 }
 
+.team-socials{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.team-social-link{
+    width: 40px;
+    height: 40px;
+}
+
+.team-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--iriscolor);
+    fill: var(--cloud);
+}
+
+.team-link:hover,
+.team-link:focus{
+    background-color: var(--oceancolor);
+}
+
 /* Customers CSS */
 
+.customer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-logo{
+    display: flex;
+    gap: 24px;
+}
+
+.customer-logo{
+    width: 168px;
+    height: 88px;
+}
+
+.customers-link{
+    width: 100%;
+    height: 100%;
+
+    border: 1px solid var(--lightslate);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--lightslate);
+}
+
+.customers-link:hover,
+.customers-link:focus{
+    fill: var(--oceancolor);
+    border-color: var(--oceancolor);
+}
 
 /* CSS for footer */
 
@@ -294,6 +377,54 @@ body {
     margin-top: 16px;
     color: var(--whitecolor);
 }
+
+.footer-social-logos{
+    margin-left: 120px;
+}
+
+.social-text{
+    color: var(--whitecolor);
+    display: flex;
+}
+
+.footer-social-lists{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer-social{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-link{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--iriscolor);
+    margin-top: 8px;
+}
+
+.footer-social-logo{
+    fill: var(--cloud);
+}
+
+.footer-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+background-color: var(--greencolor);
+}
+
+
 
 /* CSS for Portfolio Section */
 
